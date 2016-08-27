@@ -123,6 +123,15 @@ public class NetworkTestsActivity extends Activity {
      * @param v     The view that was clicked
      */
     public void testBluetooth(View v) {
+        BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        // test if bluetooth is enabled
+        if (btAdapter.isEnabled()) {
+            btStatus.setText("Your bluetooth is on");
+        }
+        else {
+            btStatus.setText("Your bluetooth is off");
+        }
     }
 
     /**
