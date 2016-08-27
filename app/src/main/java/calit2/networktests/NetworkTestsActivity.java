@@ -80,7 +80,8 @@ public class NetworkTestsActivity extends Activity {
             }
         }
         else {
-            locationStatus.setText("Your device does not support a GPS/Network provider");
+            Intent locIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+            startActivityForResult(locIntent, REQUEST_LOCATION);
         }
     }
 
