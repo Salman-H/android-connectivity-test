@@ -58,9 +58,30 @@ public class NetworkTestsActivity extends Activity {
      * @param v     The view that was clicked
      */
     public void testLocation(View v) {
-        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        LocationManager manager =
+                (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
-        NetworkTestsLocationListener listener = new NetworkTestsLocationListener();
+        NetworkTestsLocationListener listener =
+                new NetworkTestsLocationListener();
+
+        if (manager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) ||
+                manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+
+            if (manager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+                manager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, listener);
+                Location location = manager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+                locationStatus.setText("Your Coordinate is: (" + location.getLongitude() + ", " + location.getLatitude());
+            }
+
+            if (manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+                manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, listener);
+                Location location = manager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                locationStatus.setText("Your Coordinate is: (" + location.getLongitude() + ", " + location.getLatitude());
+            }
+        }
+        else {
+            locationStatus.setText("Your device does not support a GPS/Network provider");
+        }
     }
 
     /**
