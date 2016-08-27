@@ -104,6 +104,17 @@ public class NetworkTestsActivity extends Activity {
      * @param v     The view that was clicked
      */
     public void toggleWifi(View v) {
+        WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+
+        if (wifiManager.isWifiEnabled()) {
+            wifiManager.setWifiEnabled(false);
+            wifiStatus.setText("Your wifi is toggled off");
+        }
+        else {
+            wifiManager.setWifiEnabled(true);
+            wifiStatus.setText("Your wifi is toggled on.\n You are connected to:\n" + wifiInfo.getMacAddress());
+        }
     }
 
     /**
