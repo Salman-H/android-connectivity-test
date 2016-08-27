@@ -58,6 +58,9 @@ public class NetworkTestsActivity extends Activity {
      * @param v     The view that was clicked
      */
     public void testLocation(View v) {
+        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        NetworkTestsLocationListener listener = new NetworkTestsLocationListener();
     }
 
     /**
