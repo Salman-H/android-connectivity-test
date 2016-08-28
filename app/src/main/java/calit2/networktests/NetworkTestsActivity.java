@@ -171,6 +171,37 @@ public class NetworkTestsActivity extends Activity {
      */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+
+            case REQUEST_LOCATION:
+                LocationManager manager =
+                        (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                if (manager.isProviderEnabled(LocationManager.GPS_PROVIDER) ||
+                        manager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+                    locationStatus.setText(getString(R.string.location_enabled));
+                } else {
+                    locationStatus.setText(getString(R.string.try_again));
+                }
+                break;
+
+            case REQUEST_WIFI:
+                WifiManager wifi =
+                        (WifiManager) getSystemService(Context.WIFI_SERVICE);
+                if (wifi.isWifiEnabled()) {
+                    wifiStatus.setText(getString(R.string.wifi_enabled));
+                } else {
+                    wifiStatus.setText(getString(R.string.try_again));
+                }
+                break;
+
+            case REQUEST_BT:
+                if (resultCode == Activity.RESULT_OK) {
+                    btStatus.setText(getString(R.string.bluetooth_enabled));
+                } else {
+                    btStatus.setText(getString(R.string.try_again));
+                }
+                break;
+        }
     }
 
     /**

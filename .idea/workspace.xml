@@ -75,9 +75,16 @@
       <file leaf-file-name="NetworkTestsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/calit2/networktests/NetworkTestsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.648197">
-              <caret line="156" column="48" selection-start-line="156" selection-start-column="48" selection-end-line="156" selection-end-column="48" />
-              <folding />
+            <state vertical-scroll-proportion="0.8592788">
+              <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+              <folding>
+                <element signature="e#7214#7250#0" expanded="true" />
+                <element signature="e#7321#7350#0" expanded="true" />
+                <element signature="e#7622#7654#0" expanded="true" />
+                <element signature="e#7721#7750#0" expanded="true" />
+                <element signature="e#7917#7954#0" expanded="true" />
+                <element signature="e#8019#8048#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2200,9 +2207,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/calit2/networktests/NetworkTestsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.648197">
-          <caret line="156" column="48" selection-start-line="156" selection-start-column="48" selection-end-line="156" selection-end-column="48" />
-          <folding />
+        <state vertical-scroll-proportion="0.8592788">
+          <caret line="204" column="5" selection-start-line="204" selection-start-column="5" selection-end-line="204" selection-end-column="5" />
+          <folding>
+            <element signature="e#7214#7250#0" expanded="true" />
+            <element signature="e#7321#7350#0" expanded="true" />
+            <element signature="e#7622#7654#0" expanded="true" />
+            <element signature="e#7721#7750#0" expanded="true" />
+            <element signature="e#7917#7954#0" expanded="true" />
+            <element signature="e#8019#8048#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
