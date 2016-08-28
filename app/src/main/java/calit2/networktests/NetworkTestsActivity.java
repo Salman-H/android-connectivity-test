@@ -126,6 +126,17 @@ public class NetworkTestsActivity extends Activity {
      * @param v     The view that was clicked
      */
     public void connectWifiNetwork(View v) {
+        WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+
+        if (wifiManager.isWifiEnabled()) {
+            wifiManager.setWifiEnabled(false);
+            wifiStatus.setText("Your wifi is already enabled");
+        }
+        else { // if WiFi is not enabled, create a new Intent
+            Intent wifiIntent = new Intent(Settings.ACTION_WIFI_SETTINGS);
+            startActivityForResult(wifiIntent, REQUEST_WIFI);
+        }
     }
 
     /**
