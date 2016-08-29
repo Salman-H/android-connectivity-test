@@ -122,15 +122,21 @@ public class NetworkTestsActivity extends Activity {
      */
     public void toggleWifi(View v) {
         WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
 
         if (wifiManager.isWifiEnabled()) {
             wifiManager.setWifiEnabled(false);
-            wifiStatus.setText("Your wifi is toggled off");
+            wifiStatus.setText(getString(R.string.wifi_toggled_off));
         }
         else {
+            WifiInfo wifiInfo = wifiManager.getConnectionInfo();
             wifiManager.setWifiEnabled(true);
-            wifiStatus.setText("Your wifi is toggled on.\n You are connected to:\n" + wifiInfo.getMacAddress());
+
+            if (wifiInfo != null) {
+                wifiStatus.setText(getString(R.string.wifi_available,
+                        wifiInfo.getMacAddress()));
+            } else {
+                wifiStatus.setText(getString(R.string.wifi_null));
+            }
         }
     }
 
