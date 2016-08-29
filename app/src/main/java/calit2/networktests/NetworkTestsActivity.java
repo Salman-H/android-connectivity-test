@@ -191,6 +191,7 @@ public class NetworkTestsActivity extends Activity {
      */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+
         switch (requestCode) {
 
             case REQUEST_LOCATION:
