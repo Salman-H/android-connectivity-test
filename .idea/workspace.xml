@@ -62,8 +62,8 @@
       <file leaf-file-name="NetworkTestsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/calit2/networktests/NetworkTestsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8592788">
-              <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.8240985">
+              <caret line="237" column="66" selection-start-line="237" selection-start-column="66" selection-end-line="237" selection-end-column="66" />
               <folding>
                 <element signature="e#2628#2739#0" expanded="true" />
                 <element signature="e#2802#2835#0" expanded="true" />
@@ -77,6 +77,9 @@
                 <element signature="e#8056#8088#0" expanded="true" />
                 <element signature="e#8155#8184#0" expanded="true" />
                 <element signature="e#8351#8388#0" expanded="true" />
+                <element signature="e#8823#8857#0" expanded="true" />
+                <element signature="e#8887#8916#0" expanded="true" />
+                <element signature="e#8950#8983#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2133,6 +2136,9 @@
             <element signature="e#8056#8088#0" expanded="true" />
             <element signature="e#8155#8184#0" expanded="true" />
             <element signature="e#8351#8388#0" expanded="true" />
+            <element signature="e#8823#8857#0" expanded="true" />
+            <element signature="e#8887#8916#0" expanded="true" />
+            <element signature="e#8950#8983#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2186,8 +2192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/calit2/networktests/NetworkTestsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8592788">
-          <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.8240985">
+          <caret line="237" column="66" selection-start-line="237" selection-start-column="66" selection-end-line="237" selection-end-column="66" />
           <folding>
             <element signature="e#2628#2739#0" expanded="true" />
             <element signature="e#2802#2835#0" expanded="true" />
@@ -2201,6 +2207,9 @@
             <element signature="e#8056#8088#0" expanded="true" />
             <element signature="e#8155#8184#0" expanded="true" />
             <element signature="e#8351#8388#0" expanded="true" />
+            <element signature="e#8823#8857#0" expanded="true" />
+            <element signature="e#8887#8916#0" expanded="true" />
+            <element signature="e#8950#8983#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -233,5 +233,8 @@ public class NetworkTestsActivity extends Activity {
      * @param v     The view that was clicked.
      */
     public void refreshStatus(View v) {
+        btStatus.setText(getString(R.string.bluetooth_test));
+        wifiStatus.setText(getString(R.string.wifi_test));
+        locationStatus.setText(getString(R.string.location_test));
     }
 }
