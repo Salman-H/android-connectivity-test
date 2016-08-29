@@ -67,16 +67,13 @@ public class NetworkTestsActivity extends Activity {
         if (manager.isProviderEnabled(LocationManager.NETWORK_PROVIDER) ||
                 manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
 
-            if (manager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
-                manager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, listener);
-                Location location = manager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-                locationStatus.setText("Your Coordinate is: (" + location.getLongitude() + ", " + location.getLatitude());
-            }
+            Location location = getBestLocation(manager, listener);
 
-            if (manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-                manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, listener);
-                Location location = manager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                locationStatus.setText("Your Coordinate is: (" + location.getLongitude() + ", " + location.getLatitude());
+            if (location != null) {
+                locationStatus.setText(getString(R.string.location_available,
+                        location.getLongitude(), location.getLatitude()));
+            } else {
+                locationStatus.setText(getString(R.string.location_null));
             }
         }
         else {
