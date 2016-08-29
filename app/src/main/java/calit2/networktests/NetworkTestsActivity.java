@@ -95,7 +95,26 @@ public class NetworkTestsActivity extends Activity {
      * @param listener  A NetworkTestsLocationListener object to enable manager
      *                  to request a location update.
      */
-    
+    private Location getBestLocation(LocationManager manager,
+                                     NetworkTestsLocationListener listener) {
+        Location location = null;
+
+        if (manager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)) {
+            manager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                    0, 0, listener);
+            location =
+                    manager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        }
+
+        if (manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            manager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                    0, 0, listener);
+            location =
+                    manager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        }
+
+        return location;
+    }
 	
 
     /**
