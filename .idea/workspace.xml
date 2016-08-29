@@ -62,8 +62,8 @@
       <file leaf-file-name="NetworkTestsActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/calit2/networktests/NetworkTestsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5426561">
-              <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5074758">
+              <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
               <folding>
                 <element signature="e#2628#2739#0" expanded="true" />
                 <element signature="e#2802#2835#0" expanded="true" />
@@ -71,6 +71,7 @@
                 <element signature="e#5045#5129#0" expanded="true" />
                 <element signature="e#5188#5217#0" expanded="true" />
                 <element signature="e#5693#5733#0" expanded="true" />
+                <element signature="e#6343#6380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2121,6 +2122,7 @@
             <element signature="e#5045#5129#0" expanded="true" />
             <element signature="e#5188#5217#0" expanded="true" />
             <element signature="e#5693#5733#0" expanded="true" />
+            <element signature="e#6343#6380#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2174,8 +2176,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/calit2/networktests/NetworkTestsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5426561">
-          <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.5074758">
+          <caret line="173" column="9" selection-start-line="173" selection-start-column="9" selection-end-line="173" selection-end-column="9" />
           <folding>
             <element signature="e#2628#2739#0" expanded="true" />
             <element signature="e#2802#2835#0" expanded="true" />
@@ -2183,6 +2185,7 @@
             <element signature="e#5045#5129#0" expanded="true" />
             <element signature="e#5188#5217#0" expanded="true" />
             <element signature="e#5693#5733#0" expanded="true" />
+            <element signature="e#6343#6380#0" expanded="true" />
           </folding>
         </state>
       </provider>

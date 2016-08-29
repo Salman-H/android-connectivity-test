@@ -170,7 +170,7 @@ public class NetworkTestsActivity extends Activity {
 
         // test if bluetooth is enabled
         if (btAdapter.isEnabled()) {
-            btStatus.setText("Your bluetooth is on");
+            btStatus.setText(getString(R.string.bluetooth_enabled));
         }
         else { // if bluetooth is off, ask the user if they want to turn it on
             Intent btIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
